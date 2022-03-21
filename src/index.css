@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+#video{
+  height: 80vw !important;
+  width: 80vw !important;
+  position: relative !important;
+  border-radius: 10px;
+  overflow: hidden !important;
+}
+
+.qr-code-reader {
+  background-color: slategrey;
+  height: 100vh;
+  width: 100vw;  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code-reader > section > div{
+  display: flex;
+  padding-top: 0% !important;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  
+}
+
+.qr-code-reader__view-finder{
+  border: 5px solid white;
+  height: 78vw;
+  width: 60vw;
+  position: absolute;
+  z-index: 100;
+}
+
+.qr-code-heading{
+  color: white;
+}
+
+.payment{
+  background-color: slategrey;
+  height: 100vh;
+  width: 100vw;  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pay-input-div{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.pay-input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 50%;
+  font-size: 2rem;
+}
+
+
+.pay-submit{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border:1px solid white;
+  padding: 0.5rem 2rem;
+} 
