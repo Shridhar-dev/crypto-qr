@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { connectWallet } from './utils';
-import { useLocation } from "react-router-dom";
+import { useLocation,useHistory } from "react-router-dom";
 import { ethers } from 'ethers';
 
 function Payment() {
+  let history = useHistory();
   const location = useLocation();
   const [value, setValue] = useState<string>('0');
 
@@ -23,6 +24,9 @@ function Payment() {
         console.dir(transaction)
         alert("Send finished!")
       })
+
+     
+       
   }
 
   return (
@@ -34,6 +38,8 @@ function Payment() {
         <button onClick={pay} className='pay-submit'>
             Pay
         </button>
+        <h3 className='payment-address'>Sending funds to: {location.state.senderAddress}</h3>
+
     </div>
   )
 }

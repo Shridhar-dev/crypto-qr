@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 
 const QrCodeReader = () => {
   
-let history = useHistory();
+  let history = useHistory();
   const [data, setData] = useState('No result');
   
   return (

@@ -78,7 +78,7 @@ code {
   border: none;
   outline: none;
   color: white;
-  width: 50%;
+  width: 55%;
   font-size: 2rem;
 }
 
@@ -93,3 +93,16 @@ code {
   border:1px solid white;
   padding: 0.5rem 2rem;
 } 
+
+.payment-address{
+  word-wrap: break-word;
+  margin-top: 5rem;
+  width: 80%;
+  color: white;
+  opacity: 0.5;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
