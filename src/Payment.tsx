@@ -34,7 +34,7 @@ function Payment() {
             
             toast.promise(
               contract.transfer(to_address, numberOfTokens).then((transferResult:any) => {
-                console.dir(transferResult)
+                console.log(transferResult)
               }),
                {
                  loading: 'Sending Transaction...',
@@ -58,7 +58,7 @@ function Payment() {
             
             toast.promise(
               data.signer.sendTransaction(tx).then((transaction:any) => {
-                console.dir(transaction)
+                console.log(transaction)
               }),
                {
                  loading: 'Sending Transaction...',
