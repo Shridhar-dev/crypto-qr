@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import Payment from './Payment';
+import Home from './Home';
 
 
 export default function App() {
@@ -14,6 +15,9 @@ export default function App() {
     <Router>    
         <Switch>
           <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/qrscan">
             <QrCodeReader />
           </Route>
           <Route exact path="/payment">

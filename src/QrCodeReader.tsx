@@ -11,8 +11,8 @@ const QrCodeReader = () => {
   
   return (
     <>
-      <div className='qr-code-reader'>
-        <h1 className='qr-code-heading'>Scan</h1>
+      <div className='qr-code-reader text-3xl '>
+        <h1 className='qr-code-heading mb-5'>Scan the QR</h1>
         <QrReader
           constraints={{facingMode: 'environment'}}
           scanDelay={100}
