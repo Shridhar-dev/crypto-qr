@@ -9,6 +9,7 @@ import {
 import Payment from './Payment';
 import Home from './Home';
 import QrCodeGenerator from './QRCodeGenerator';
+import Success from './Success';
 
 
 export default function App() {
@@ -26,6 +27,9 @@ export default function App() {
           </Route>
           <Route exact path="/payment">
             <Payment />
+          </Route>
+          <Route exact path="/success">
+            <Success />
           </Route>
         </Switch>   
     </Router>

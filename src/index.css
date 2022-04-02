@@ -96,3 +96,15 @@ body{
   color: white;
   opacity: 0.5; /* Firefox */
 }
+
+.tick_rotate{
+  animation: tick_spin 1s linear;
+}
+
+@keyframes tick_spin {
+  0% { transform: rotateY(0deg); }
+  20% { transform: rotateY(10deg); }
+  80% { transform: rotateY(350deg); }
+  100% { transform: rotateY(360deg); }
+}
+  
