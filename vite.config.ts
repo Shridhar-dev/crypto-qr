@@ -1,12 +1,17 @@
-import { defineConfig } from 'vite'
+import { defineConfig, UserConfigExport } from 'vite'
 import react from '@vitejs/plugin-react'
-import fs from 'fs';
+import * as fs from 'fs';
 // https://vitejs.dev/config/
+
+let key:Buffer = fs.readFileSync('key.pem');
+let cert:Buffer = fs.readFileSync('cert.pem');
+
 export default defineConfig({
   
   plugins: [react()],
+
   https: {
-    key: fs.readFileSync('key.pem'),
-    cert: fs.readFileSync('cert.pem')
+    key: key,
+    cert:cert
   }
 })

@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Payment from './Payment';
 import Home from './Home';
+import QrCodeGenerator from './QRCodeGenerator';
 
 
 export default function App() {
@@ -17,8 +18,11 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/qrscan">
+          <Route exact path="/scanqr">
             <QrCodeReader />
+          </Route>
+          <Route exact path="/getqr">
+            <QrCodeGenerator />
           </Route>
           <Route exact path="/payment">
             <Payment />

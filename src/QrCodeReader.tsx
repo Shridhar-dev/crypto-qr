@@ -18,11 +18,11 @@ const QrCodeReader = () => {
           scanDelay={100}
           onResult={(result, error) => {
             if (!!result) {
-              setData(result?.text);
+              setData(result?.getText());
               
               history.push({ 
                 pathname: '/payment',
-                state: {senderAddress: result?.text}
+                state: {senderAddress: result?.getText()}
               });
             }
 
